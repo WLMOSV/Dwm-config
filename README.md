@@ -36,8 +36,8 @@
 以下是我添加的一些额外快捷键示例：
 
 - Mod 键 + Shift 键 + Enter 键：启动终端仿真器。
-- Mod 键 + d 键：打开 dmenu，用于启动应用程序。
-- Mod 键 + Shift 键 + q 键：退出当前窗口。
+- Mod 键 + p 键：打开 dmenu，用于启动应用程序。
+- Mod 键 + Shift 键 + q 键：退出Dwm。
 - Mod 键 + Shift 键 + c 键：关闭焦点窗口。
 - Mod 键 + j 键：聚焦到下一个窗口。
 - Mod 键 + k 键：聚焦到上一个窗口。
@@ -58,29 +58,29 @@
 
 - `volume_up.sh`：增大音量。
 
-  ```bash
+  bash
   #!/bin/bash
   
   amixer sset Naster 5%+ unmute
-  ```
+  
 
 - `volume_down.sh`：减小音量。
 
-  ```bash
+  bash
   #!/bin/bash
   amixer sset Master 5%- unmute
-  ```
+  
 
 - `volume_toggle.sh`：切换静音状态。
 
-  ```bash
+  bash
   #!/bin/bash
   if amixer get Master | grep -Fq "[on]"; then
       amixer set Master mute
   else
       amixer set Master unmute
   fi
-  ```
+  
 
   
 
